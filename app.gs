@@ -8,8 +8,8 @@ function myFunction() {
   var templateParagprah = DocumentApp.openById(docsTemplateID).getBody().getParagraphs();
 
   var docsGenerated = DocumentApp.openById(docsGeneratedFileID);
- 
-  var sheetFile = SpreadsheetApp.openById(sheetsGradesID).getSheetByName("Sheet1");
+  var sheetName = // add the name of the sheet that you will use 
+  var sheetFile = SpreadsheetApp.openById(sheetsGradesID).getSheetByName(sheetName);
   
   
   docsGenerated.getBody().clear();
